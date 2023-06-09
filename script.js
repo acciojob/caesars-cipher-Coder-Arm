@@ -32,11 +32,11 @@ const lookup = {
 };
 
 function rot13(encodedStr) {
-  let decodedArr = []; // Your Result goes here
+  let decodedArr = ""; // Your Result goes here
   // Only change code below this line
 	for(let i = 0; i < encodedStr.length; i++){
 	for(let val in lookup){
-		if(val == encodedStr.charAt(i)) decodedArr.push(lookup[val]);
+		if(val == encodedStr.charAt(i)) decodedArr+=lookup[val];
 	}
 	}
 
